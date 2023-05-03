@@ -10,10 +10,23 @@
 
     <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <link rel="shortcut icon" href="../src/assets/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/index.css" type="text/css">
   </head>
   <body>
-    <h1>XXXX</h1>
+    <section class="wrapper dflex f-col">
+      <h1>Today's To Do</h1>
+      <hr>
+      <div class="inputField">
+        <input type="text" id="task-input" placeholder="Add to your list ...." class="task-entry">
+      </div>
+      <hr>
+      <div class="tasklist-body">
+        <ul class="tasks-container dflex f-col"></ul>
+      </div>
+
+      <div class="footer">
+        <span class="clear-all-completed">Clear All Completed</span>
+      </div>
+    </section>
+    <script src="./index.js" defer></script>
   </body>
 </html>
