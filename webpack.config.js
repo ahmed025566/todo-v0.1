@@ -2,13 +2,13 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),
+    bundle: path.resolve(__dirname, './src/index.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: 'index.js',
     clean: true,
     assetModuleFilename: '[name][ext]',
   },
@@ -17,7 +17,7 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, 'dist'),
     },
-    port: 5500,
+    port: 3000,
     open: true,
     hot: true,
     compress: true,
@@ -26,11 +26,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -49,8 +49,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '2Dwist',
       filename: 'index.html',
-      template: 'src/index.html',
-      favicon: 'src/assets/favicon.jpg',
+      template: './src/index.html',
+      favicon: './src/assets/favicon.jpg',
     }),
     /* new BundleAnalyzerPlugin(), */
   ],
