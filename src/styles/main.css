@@ -14,19 +14,37 @@ html {
   font-size: 16px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .pos-center {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 }
 
 .dflex {
   display: flex;
 }
 
-.flex-col {
+.f-col {
   flex-direction: column;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.tasklist-body {
+  box-sizing: border-box;
+  width: 70%;
+  max-width: 1200px;
+  margin: auto 15%;
+  padding: 0 1%;
+  border: 1px solid slategray;
+  box-shadow: var(--clr-box-shadow);
 }
 
 .tasklist-body h2 {
