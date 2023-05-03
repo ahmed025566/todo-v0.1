@@ -11,13 +11,22 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 
   </head>
-  <body class="dflex f-col">
-    <h1>Your ToDoS</h1>
+  <body>
+    <section class="wrapper dflex f-col">
+      <h1>Today's To Do</h1>
+      <hr>
+      <div class="inputField">
+        <input type="text" id="task-input" placeholder="Add to your list ...." class="task-entry">
+      </div>
+      <hr>
+      <div class="tasklist-body">
+        <ul class="tasks-container dflex f-col"></ul>
+      </div>
 
-    <div class="tasklist-body self-center">
-      <h2>Today's To Do</h2>
-      <ul class="tasks-container dflex f-col"></ul>
-    </div>
+      <div class="footer">
+        <span class="clear-all-completed">Clear All Completed</span>
+      </div>
+    </section>
     <script src="./index.js" defer></script>
   </body>
 </html>

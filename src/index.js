@@ -38,7 +38,10 @@ const renderTasks = (listOfTasks) => {
   sortTasks(listOfTasks);
   tasksContainer.innerHTML = `
     ${listOfTasks.map((task) => `
-      <li class="task">${task.description}</li>
+      <li class="task">
+        <input type="checkbox" name="task-status" id="${task.id}-status">
+        ${task.description}
+      </li>
     `).join('')
   }`;
 }

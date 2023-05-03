@@ -1,7 +1,7 @@
 :root {
   --clr-primary-color: #530b83;
   --clr-secondary-color: #f4f4f4;
-  --clr-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  --clr-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.151), 0 6px 6px rgba(32, 32, 32, 0.24);
 }
 
 *,
@@ -14,8 +14,14 @@ html {
   font-size: 16px;
 }
 
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
-  text-align: center;
+  text-align: start;
 }
 
 .pos-center {
@@ -37,14 +43,20 @@ h1 {
   align-self: center;
 }
 
-.tasklist-body {
+.wrapper {
   box-sizing: border-box;
   width: 70%;
   max-width: 1200px;
-  margin: auto 15%;
+  margin: 5% 15% auto;
   padding: 0 1%;
+  border-radius: 10px;
   border: 1px solid slategray;
   box-shadow: var(--clr-box-shadow);
+}
+
+.tasks-container {
+  list-style-type: none;
+  justify-content: flex-start;
 }
 
 .tasklist-body h2 {
