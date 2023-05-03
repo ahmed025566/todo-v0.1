@@ -10,10 +10,14 @@
 
     <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <link rel="shortcut icon" href="../src/assets/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/index.css" type="text/css">
   </head>
-  <body>
-    <h1>XXXX</h1>
+  <body class="dflex f-col">
+    <h1>Your ToDoS</h1>
+
+    <div class="tasklist-body self-center">
+      <h2>Today's To Do</h2>
+      <ul class="tasks-container dflex f-col"></ul>
+    </div>
+    <script src="./index.js" defer></script>
   </body>
 </html>
