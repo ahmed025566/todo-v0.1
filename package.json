@@ -1,16 +1,21 @@
 {
-  "name": "webpack-starter",
+  "name": "todo-app",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/JuniorGarciaRodriguez/todo-v0.1.git"
+  },
   "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
   "private": true,
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve --open"
+    "dev": "webpack serve --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["Todo"],
+  "author": "Junior Garcia",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
