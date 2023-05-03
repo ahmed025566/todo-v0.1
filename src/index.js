@@ -1,38 +1,36 @@
-import './styles/main.css'
+import './styles/main.css';
 
 const tasksContainer = document.querySelector('.tasks-container');
 
 const listOfTasks = [
   {
-    'index': 1,
-    'description': 'lorem first',
-    'completed': false
+    index: 1,
+    description: 'lorem first',
+    completed: false,
   },
   {
-    'index': 5,
-    'description': 'lorem fifth',
-    'completed': false
+    index: 5,
+    description: 'lorem fifth',
+    completed: false,
   },
   {
-    'index': 3,
-    'description': 'lorem third',
-    'completed': false
+    index: 3,
+    description: 'lorem third',
+    completed: false,
   },
   {
-    'index': 4,
-    'description': 'lorem forth',
-    'completed': false
+    index: 4,
+    description: 'lorem forth',
+    completed: false,
   },
   {
-    'index': 2,
-    'description': 'lorem second',
-    'completed': false
-  }
-]
+    index: 2,
+    description: 'lorem second',
+    completed: false,
+  },
+];
 
-const sortTasks = (listOfTasks) => {
-  return listOfTasks.sort((a,b) => a.index - b.index);
-}
+const sortTasks = (listOfTasks) => listOfTasks.sort((a, b) => a.index - b.index);
 
 const renderTasks = (listOfTasks) => {
   sortTasks(listOfTasks);
@@ -43,7 +41,7 @@ const renderTasks = (listOfTasks) => {
         ${task.description}
       </li>
     `).join('')
-  }`;
-}
+}`;
+};
 
 renderTasks(listOfTasks);
