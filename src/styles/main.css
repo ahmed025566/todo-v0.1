@@ -18,6 +18,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: var(--clr-secondary-color);
 }
 
 h1 {
@@ -43,6 +44,10 @@ h1 {
   align-self: center;
 }
 
+.nobor {
+  border-color: transparent;
+}
+
 .wrapper {
   box-sizing: border-box;
   width: 70%;
@@ -54,11 +59,75 @@ h1 {
   box-shadow: var(--clr-box-shadow);
 }
 
+hr {
+  background-color: whitesmoke;
+  background-blend-mode: lighten;
+  width: 100%;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+.fa {
+  font-size: 1.5rem;
+}
+
 .tasks-container {
   list-style-type: none;
   justify-content: flex-start;
+  padding-left: 0;
 }
 
 .tasklist-body h2 {
   text-align: center;
+}
+
+.inputField {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-entry {
+  font-style: italic;
+  font-size: 0.8rem;
+  width: 90%;
+  background-color: transparent;
+}
+
+.task {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(143, 143, 143, 0.76);
+  font-size: 1.3rem;
+  padding: 0.8rem;
+}
+
+.refresh,
+.task-more,
+.btn.submit {
+  margin-left: auto;
+  margin-right: 0.75rem;
+}
+
+.btn {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn.clear-all-completed {
+  padding: 0.63rem 1.25rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.13rem;
+  cursor: pointer;
+  margin-top: 1.9rem;
+  width: 100%;
 }
