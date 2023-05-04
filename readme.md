@@ -31,10 +31,10 @@
 - [📝 License](#license)
 - [⚠️Disclaimer](#disclaimer)
 
-# 📖 [XXXX] <a name="about-project"></a>
+# 📖 [todo-v0.1] <a name="about-project"></a>
 
 
-**[XXXX]** is a 
+**[todo-v0.1]** is a template for a ToDo list web application
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,53 +49,55 @@
   </ul>
 </details>
 
-<details>
-  <summary>UX/UI</summary>
-  <ul>
-    <li><a href="#"></a></li>
-  </ul>
-</details>
-
 
 ### Key Features <a name="key-features"></a>
 
-- **[Fully responsive design]**
+- **[Modular design using webpack]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://juniorgarciarodriguez.github.io/XXXX/)
+- There is no live demo available for the template. There might be after the app has passed development
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
-To get a local copy up and running cloning this repo `git clone https://github.com/JuniorGarciaRodriguez/XXXX.git`.
+To get a local copy up and running cloning this repo `git clone https://github.com/JuniorGarciaRodriguez/todo-v0.1.git`.
 
 ### Prerequisites
 
-There are no known prerequisites to run this project. If you encounter any issues trying to run it, please feel
-free to [open a ticket](../../issues/) to let me know and i will work on it to the best of my abilities
+All requirements are already listed in package.json
+Make sure you have node.js installed and follow the setup instrucions
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git clone https://github.com/JuniorGarciaRodriguez/XXXX.git
+cd my-folder
+git clone https://github.com/JuniorGarciaRodriguez/todo-v0.1.git
+```
+
+Install node.js
+
+Run these commands:
+```sh
+npm i
+npm build
 ```
 
 ### Usage
 
-To run the project, open it in your browser of choice:
+To run this app use the command `npm start` or launch index.html from
+the dist folder after running `npm build`
 
 
 ### Deployment
 
-You can deploy this project using [github pages](https://docs.github.com/en/pages/quickstart), or a web-hosting platform of your choice.
+This is a WIP that is not ready for deployment yet.
 
 
 
@@ -114,8 +116,8 @@ You can deploy this project using [github pages](https://docs.github.com/en/page
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[]**
-
+- [ ] **[OOP logic]**
+- [ ] **[User interactions logic]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -136,7 +138,7 @@ If you like this project feel free to use it as you please within the scope of _
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thanks:
-- **_[name](url)_** for 
+- **_[Emilia Andrzejewska](https://www.youtube.com/watch?v=AcUd-_Yjjqg)_** for inspiring this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,5 +162,6 @@ I only created the website html, styles and interactions _(html, css, js)_
 The media files on this site __DOES NOT__ belong to me. All credit must be given to the original author/source. See details below
 
 - [favicon](https://www.pixiv.net/en/artworks/71008974) by [横gon](https://www.pixiv.net/en/users/29647895)
+- Original design and project idea came from [this](https://www.youtube.com/watch?v=AcUd-_Yjjqg) video from [Emilia Andrzejewska](https://www.youtube.com/@emiliaandrzejewska4209/videos)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
