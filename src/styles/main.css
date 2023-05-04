@@ -23,6 +23,7 @@ body {
 
 h1 {
   text-align: start;
+  font-size: 1.25rem;
 }
 
 .pos-center {
@@ -68,10 +69,6 @@ hr {
 .header {
   justify-content: space-between;
   align-items: center;
-}
-
-h1 {
-  font-size: 1.25rem;
 }
 
 .fa {
