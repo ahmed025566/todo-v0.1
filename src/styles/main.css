@@ -49,6 +49,10 @@ h1 {
   border-color: transparent;
 }
 
+.hidden {
+  display: none;
+}
+
 .wrapper {
   box-sizing: border-box;
   width: 70%;
@@ -156,5 +160,14 @@ hr {
   font-size: 1.13rem;
   cursor: pointer;
   margin-top: 1.9rem;
+  width: 100%;
+}
+
+.task-desc {
+  width: 100%;
+}
+
+.newdesc-entry {
+  border-color: transparent;
   width: 100%;
 }
