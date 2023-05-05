@@ -39,10 +39,13 @@ export default class TaskList {
   }
 
   editTask(id, newDescription) {
-    const edited = this.tasksList.splice(id, 1);
-    const currentStatus = edited.status;
-    this.addTask(id, newDescription, currentStatus);
-    this.tasksList.sortTasks();
+    const removedTask = this.tasksList.splice(id - 1, 1)[0];
+    this.tasksList.push({
+      id: removedTask.id,
+      description: newDescription,
+      completed: removedTask.completed,
+    });
+    this.sortTasks();
     this.saveTasks();
   }
 
