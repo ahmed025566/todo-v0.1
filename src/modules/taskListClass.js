@@ -55,12 +55,16 @@ export default class TaskList {
   }
 
   clearCompleted() {
-    this.taskslist = this.tasksList.filter((task) => !task.completed);
+    this.tasksList = this.tasksList.filter((task) => !task.completed);
+
+    /* Adjust id based on new positions */
     let iter = 1;
     this.tasksList.forEach((task) => {
       task.id = iter;
       iter += 1;
     });
+    this.currentId = iter; // ensures correct id sequence for next task
+    this.saveTasks();
   }
 
   getTasks() {
