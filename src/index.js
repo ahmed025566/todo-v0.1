@@ -9,7 +9,7 @@ const renderTasks = (listOfTasks) => {
   tasksContainer.innerHTML = `
     ${listOfTasks.map((task) => `
       <li class="task dflex"  id="task-${task.id}">
-        <input type="checkbox" name="task-status">
+        <input type="checkbox" name="task-status" ${task.completed ? 'checked' : 'unchecked'}>
         <span class="task-desc">${task.description}</span>
         <div class="icon-swapper dflex">
           <i class="fa-solid fa-ellipsis-vertical task-more"></i>
