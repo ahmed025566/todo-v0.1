@@ -43,9 +43,14 @@ export default class TaskList {
     this.tasksList.push({
       id: removedTask.id,
       description: newDescription,
-      completed: removedTask.completed,
+      completed: false,
     });
     this.sortTasks();
+    this.saveTasks();
+  }
+
+  updateStatus(id, status) {
+    this.tasksList[id - 1].completed = status;
     this.saveTasks();
   }
 
