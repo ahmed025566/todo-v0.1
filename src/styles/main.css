@@ -64,6 +64,7 @@ hr {
   background-color: whitesmoke;
   background-blend-mode: lighten;
   width: 100%;
+  margin: 0;
 }
 
 .header {
@@ -93,8 +94,10 @@ hr {
 
 .task-entry {
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1rem;
   width: 90%;
+  height: 100%;
+  padding: 1.2rem;
   background-color: transparent;
 }
 
@@ -108,15 +111,42 @@ hr {
 }
 
 .refresh,
-.task-more,
+.icon-swapper,
 .btn.submit {
   margin-left: auto;
   margin-right: 0.75rem;
 }
 
+.refresh {
+  cursor: pointer;
+}
+
+.icon-swapper {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.task-more {
+  display: initial;
+}
+
+.icon-swapper:hover .task-more {
+  display: none;
+}
+
+.task-delete {
+  display: none;
+}
+
+.icon-swapper:hover .task-delete {
+  display: initial;
+}
+
 .btn {
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .btn.clear-all-completed {
