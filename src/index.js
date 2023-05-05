@@ -115,4 +115,12 @@ dataEntryForm.addEventListener('submit', (e) => {
   entryField.value = '';
   renderTasks(tasks.getTasks());
 });
+
+/* Clear all completed tasks from the view */
+const cleanerBtn = document.querySelector('.clear-all-completed');
+cleanerBtn.addEventListener('click', () => {
+  tasks.clearCompleted();
+  renderTasks(tasks.getTasks());
+});
+
 renderTasks(tasks.getTasks());
