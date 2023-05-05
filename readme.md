@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- There is no live demo available for the template. There might be after the app has passed development
+- For a live demo check [here](https://juniorgarciarodriguez.github.io/todo-v0.1/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
