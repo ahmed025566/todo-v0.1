@@ -18,10 +18,8 @@ const renderTasks = (tasks, listOfTasks) => {
   const deleteIcon = document.querySelectorAll('.task-delete');
   deleteIcon.forEach((icon) => {
     icon.addEventListener('click', (e) => {
-      console.log('click');
       e.preventDefault();
       const taskID = e.target.parentNode.parentNode.id.replace('task-', '');
-      console.log(taskID);
       tasks.removeTask(taskID);
       renderTasks(tasks.getTasks());
     });
