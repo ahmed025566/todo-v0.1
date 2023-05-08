@@ -2,7 +2,7 @@
   --clr-primary-color: #530b83;
   --clr-secondary-color: #f4f4f4;
   --clr-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.151), 0 6px 6px rgba(32, 32, 32, 0.24);
-  --clr-task-completed: rgba(143, 143, 143, 0.76);
+  --clr-task-completed: rgba(143, 143, 143, 0.75);
 }
 
 *,
