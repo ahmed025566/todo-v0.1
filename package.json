@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "watch": "jest --watch *.js",
+    "watch": "jest --watchAll *.js",
     "build": "webpack",
     "start": "webpack serve --open",
     "predeploy": "npm run build",
