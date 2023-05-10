@@ -112,6 +112,13 @@ This is a WIP that is not ready for deployment yet.
 - Twitter: [@J.Garcia](https://twitter.com/JGarciaGez)
 - LinkedIn: [@J.Garcia](https://www.linkedin.com/in/junior-g-078143191/)
 
+👤 **Ahmed Salah**
+
+- GitHub: [@ahmed](https://github.com/ahmed025566)
+- Twitter: [@AhmedEl18692792](https://twitter.com/AhmedEl18692792)
+- LinkedIn: [Ahmed Salah](https://www.linkedin.com/in/ahmed-salah025566)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
