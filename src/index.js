@@ -5,7 +5,10 @@ const tasks = new TaskList();
 
 const tasksContainer = document.querySelector('.tasks-container');
 const renderTasks = (listOfTasks) => {
-  tasksContainer.innerHTML = `
+  if (listOfTasks.length === 0) {
+    tasksContainer.innerHTML = '';
+  } else {
+    tasksContainer.innerHTML = `
     ${listOfTasks.map((task) => `
       <li class="task dflex"  id="task-${task.id}">
         <input class="task-complete" type="checkbox" name="task-status" ${task.completed ? 'checked' : 'unchecked'}>
@@ -13,10 +16,9 @@ const renderTasks = (listOfTasks) => {
         <div class="icon-swapper dflex">
           <i class="fa-solid fa-ellipsis-vertical task-more"></i>
           <i class="fa-solid fa-eraser task-delete"></i>
-      </li>
-      `).join('')
-}`;
-
+      </li>`).join('')}`;
+  }
+}
   /* EVENT HANDLERS */
   const refreshIcon = document.querySelector('.refresh');
   refreshIcon.addEventListener('click', () => {
