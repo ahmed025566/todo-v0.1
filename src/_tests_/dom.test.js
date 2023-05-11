@@ -91,6 +91,7 @@ describe('Task List', () => {
     tasks.addTask('Task 1');
     tasks.addTask('Task 2');
     tasks.addTask('Task 3');
+    tasks.addTask('Task 4');
     tasks.removeTask(2);
     renderTasks(tasks.getTasks());
 
@@ -104,9 +105,10 @@ describe('Task List', () => {
     tasks.addTask('Task 1');
     tasks.addTask('Task 2');
     tasks.addTask('Task 3');
+    tasks.addTask('Task 4');
     tasks.removeTask(2);
     renderTasks(tasks.getTasks());
 
-    expect(tasksContainer.childElementCount).toBe(2);
+    expect(tasksContainer.childElementCount).toBe(3);
   });
 });
